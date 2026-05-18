@@ -14,8 +14,75 @@
     </linearGradient>
   </defs>
 
+  <style>
+    /* Gentle floating for the whole book */
+    @keyframes bookFloat {
+      0%, 100% { transform: translate(60px, 60px); }
+      50% { transform: translate(60px, 52px); }
+    }
+    .book { animation: bookFloat 4s ease-in-out infinite; }
+
+    /* Sparkle pulse */
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+    .sparkle1 { animation: sparkle 2s ease-in-out infinite; transform-origin: center; }
+    .sparkle2 { animation: sparkle 2.5s ease-in-out 0.5s infinite; transform-origin: center; }
+    .sparkle3 { animation: sparkle 3s ease-in-out 1s infinite; transform-origin: center; }
+    .sparkle4 { animation: sparkle 2.2s ease-in-out 0.3s infinite; transform-origin: center; }
+
+    /* Chart line drawing */
+    @keyframes drawChart {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .chart-line {
+      stroke-dasharray: 200;
+      animation: drawChart 3s ease-out infinite;
+    }
+
+    /* Chart dot pulse */
+    @keyframes dotPulse {
+      0%, 100% { r: 3; opacity: 0.6; }
+      50% { r: 5; opacity: 1; }
+    }
+    .chart-dot { animation: dotPulse 2s ease-in-out infinite; }
+
+    /* Cake sparkles twinkle */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+    .cake-sparkle1 { animation: twinkle 1.5s ease-in-out infinite; }
+    .cake-sparkle2 { animation: twinkle 1.8s ease-in-out 0.4s infinite; }
+    .cake-sparkle3 { animation: twinkle 2s ease-in-out 0.8s infinite; }
+
+    /* Floating icons */
+    @keyframes floatIcon1 {
+      0%, 100% { transform: translate(330px, 80px) rotate(0deg); }
+      50% { transform: translate(330px, 72px) rotate(5deg); }
+    }
+    .float-icon1 { animation: floatIcon1 3.5s ease-in-out infinite; }
+
+    @keyframes floatIcon2 {
+      0%, 100% { transform: translate(30px, 100px) rotate(0deg); }
+      50% { transform: translate(30px, 94px) rotate(-8deg); }
+    }
+    .float-icon2 { animation: floatIcon2 4s ease-in-out 0.5s infinite; }
+
+    /* Tag color pulse */
+    @keyframes tagPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+    .tag-blue { animation: tagPulse 2s ease-in-out infinite; }
+    .tag-red { animation: tagPulse 2s ease-in-out 0.3s infinite; }
+    .tag-green { animation: tagPulse 2s ease-in-out 0.6s infinite; }
+  </style>
+
   <!-- Open book -->
-  <g transform="translate(60, 60)">
+  <g class="book">
     <!-- Book spine shadow -->
     <ellipse cx="140" cy="200" rx="130" ry="15" fill="#667eea" opacity="0.1"/>
 
@@ -39,9 +106,9 @@
     <line x1="30" y1="70" x2="110" y2="70" stroke="#667eea" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
     <line x1="30" y1="85" x2="90" y2="85" stroke="#667eea" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
 
-    <!-- Left page: mini chart (metrics) -->
-    <polyline points="35,140 55,125 75,135 95,110 115,120" stroke="#e91e63" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
-    <circle cx="95" cy="110" r="3" fill="#e91e63" opacity="0.6"/>
+    <!-- Left page: animated metric chart -->
+    <polyline class="chart-line" points="35,140 55,125 75,135 95,110 115,120" stroke="#e91e63" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <circle class="chart-dot" cx="95" cy="110" r="3" fill="#e91e63"/>
 
     <!-- Right page: cake illustration -->
     <g transform="translate(170, 45)">
@@ -54,31 +121,30 @@
       <!-- Cherry on top -->
       <circle cx="50" cy="30" r="6" fill="#DC143C"/>
       <path d="M50 24 Q55 15 58 18" stroke="#228B22" stroke-width="1.5" fill="none"/>
-      <!-- Sparkles -->
-      <circle cx="30" cy="50" r="1.5" fill="#FFD700" opacity="0.8"/>
-      <circle cx="65" cy="55" r="1.5" fill="#FFD700" opacity="0.8"/>
-      <circle cx="48" cy="70" r="1" fill="#FFD700" opacity="0.6"/>
+      <!-- Animated sparkles on cake -->
+      <circle class="cake-sparkle1" cx="30" cy="50" r="1.5" fill="#FFD700"/>
+      <circle class="cake-sparkle2" cx="65" cy="55" r="1.5" fill="#FFD700"/>
+      <circle class="cake-sparkle3" cx="48" cy="70" r="1" fill="#FFD700"/>
     </g>
 
-    <!-- Right page: color-coded tags (params/metrics/tags) -->
-    <rect x="165" y="130" width="30" height="8" rx="4" fill="#4a9eda" opacity="0.4"/>
-    <rect x="200" y="130" width="25" height="8" rx="4" fill="#e91e63" opacity="0.4"/>
-    <rect x="230" y="130" width="20" height="8" rx="4" fill="#7cb342" opacity="0.4"/>
+    <!-- Right page: animated color-coded tags -->
+    <rect class="tag-blue" x="165" y="130" width="30" height="8" rx="4" fill="#4a9eda"/>
+    <rect class="tag-red" x="200" y="130" width="25" height="8" rx="4" fill="#e91e63"/>
+    <rect class="tag-green" x="230" y="130" width="20" height="8" rx="4" fill="#7cb342"/>
 
-    <!-- Right page: more text lines -->
+    <!-- Right page: text lines -->
     <line x1="165" y1="150" x2="250" y2="150" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
     <line x1="165" y1="163" x2="235" y2="163" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
   </g>
 
-  <!-- Floating elements around the book -->
-  <!-- Detective magnifying glass -->
-  <g transform="translate(330, 80)" opacity="0.6">
+  <!-- Floating detective magnifying glass -->
+  <g class="float-icon1" opacity="0.6">
     <circle cx="12" cy="12" r="10" stroke="#667eea" stroke-width="2" fill="none"/>
     <line x1="19" y1="19" x2="28" y2="28" stroke="#667eea" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 
-  <!-- Gear/settings icon -->
-  <g transform="translate(30, 100)" opacity="0.4">
+  <!-- Floating gear icon -->
+  <g class="float-icon2" opacity="0.4">
     <circle cx="10" cy="10" r="5" stroke="#764ba2" stroke-width="1.5" fill="none"/>
     <line x1="10" y1="2" x2="10" y2="0" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
     <line x1="10" y1="18" x2="10" y2="20" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
@@ -86,13 +152,20 @@
     <line x1="18" y1="10" x2="20" y2="10" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 
-  <!-- Star sparkle -->
-  <g transform="translate(350, 200)" opacity="0.5">
+  <!-- Pulsing sparkle stars -->
+  <g class="sparkle1" transform="translate(350, 200)">
     <path d="M8 0 L10 6 L16 8 L10 10 L8 16 L6 10 L0 8 L6 6 Z" fill="#f093fb"/>
   </g>
 
-  <!-- Small star -->
-  <g transform="translate(50, 230)" opacity="0.3">
+  <g class="sparkle2" transform="translate(50, 230)">
     <path d="M5 0 L6 4 L10 5 L6 6 L5 10 L4 6 L0 5 L4 4 Z" fill="#667eea"/>
+  </g>
+
+  <g class="sparkle3" transform="translate(370, 140)">
+    <path d="M4 0 L5 3 L8 4 L5 5 L4 8 L3 5 L0 4 L3 3 Z" fill="#764ba2"/>
+  </g>
+
+  <g class="sparkle4" transform="translate(20, 170)">
+    <path d="M3 0 L4 2 L6 3 L4 4 L3 6 L2 4 L0 3 L2 2 Z" fill="#f093fb"/>
   </g>
 </svg>
