@@ -24,6 +24,7 @@ export default defineConfig({
         nav: [
           { text: 'Fables', link: '/en/guide/' },
           { text: 'Reference', link: '/en/reference/glossary' },
+          { text: 'Credits', link: '/en/credits' },
         ],
         sidebar: {
           '/en/guide/': [
@@ -110,6 +111,7 @@ export default defineConfig({
         nav: [
           { text: '寓言', link: '/zh/guide/' },
           { text: '参考', link: '/zh/reference/glossary' },
+          { text: '致谢', link: '/zh/credits' },
         ],
         sidebar: {
           '/zh/guide/': [
