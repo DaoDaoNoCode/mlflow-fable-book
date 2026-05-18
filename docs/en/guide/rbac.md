@@ -99,7 +99,7 @@ User management endpoints are in v2 (`ajax-api/2.0/mlflow/users/`). Role and per
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Apartment Building](./workspaces) — permissions are scoped within workspaces
 - [The Royal Library](./model-registry) — model permissions control who can promote models
 :::

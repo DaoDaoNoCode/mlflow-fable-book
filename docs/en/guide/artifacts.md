@@ -56,7 +56,7 @@ Imagine storing a 2GB model file in a SQL database alongside tiny strings like `
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Chef's Kitchen](./experiments-and-runs) — artifacts are stored per Run
 - [The Apprentice's Logbook](./logged-models) — model artifacts create LoggedModel records
 :::

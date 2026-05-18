@@ -138,6 +138,6 @@ Links appear most often in multi-agent or async pipeline scenarios. If your appl
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Detective's Thread](./tracing-and-spans) — span links extend the tracing model for async multi-agent systems
 :::

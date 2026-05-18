@@ -97,7 +97,7 @@ client.create_deployment(name="prod-model", model_uri="models:/my-model/1")
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [皇家图书馆](./model-registry) — 模型从 Registry 部署到生产环境
 - [万能转换头](./flavors-and-packaging) — pyfunc 提供统一的 predict() 接口
 - [港口调度员](./ai-gateway) — 网关可以把请求路由到已部署的模型

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" fill="none">
+  <defs>
+    <linearGradient id="bookGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9ff"/>
+      <stop offset="100%" stop-color="#eef0ff"/>
+    </linearGradient>
+    <linearGradient id="cakeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B4513"/>
+      <stop offset="100%" stop-color="#5C2D0E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Open book -->
+  <g transform="translate(60, 60)">
+    <!-- Book spine shadow -->
+    <ellipse cx="140" cy="200" rx="130" ry="15" fill="#667eea" opacity="0.1"/>
+
+    <!-- Left page -->
+    <path d="M10 20 Q10 10 20 10 L130 10 L140 15 L140 190 L130 185 Q20 185 10 195 Z" fill="url(#pageGrad)" stroke="#d0d5f0" stroke-width="1"/>
+    <!-- Right page -->
+    <path d="M140 15 L150 10 Q260 10 270 20 L270 195 Q260 185 150 185 L140 190 Z" fill="url(#pageGrad)" stroke="#d0d5f0" stroke-width="1"/>
+
+    <!-- Book cover edges -->
+    <path d="M5 25 Q5 12 18 8 L130 8 L140 13" fill="none" stroke="url(#bookGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M140 13 L150 8 Q262 8 275 25" fill="none" stroke="url(#bookGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M5 25 L5 200 Q5 210 18 210 L130 195" fill="none" stroke="url(#bookGrad)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M275 25 L275 200 Q275 210 262 210 L150 195" fill="none" stroke="url(#bookGrad)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Spine -->
+    <line x1="140" y1="13" x2="140" y2="190" stroke="url(#bookGrad)" stroke-width="2"/>
+
+    <!-- Left page: text lines -->
+    <line x1="30" y1="40" x2="115" y2="40" stroke="#667eea" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+    <line x1="30" y1="55" x2="100" y2="55" stroke="#667eea" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+    <line x1="30" y1="70" x2="110" y2="70" stroke="#667eea" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+    <line x1="30" y1="85" x2="90" y2="85" stroke="#667eea" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+
+    <!-- Left page: mini chart (metrics) -->
+    <polyline points="35,140 55,125 75,135 95,110 115,120" stroke="#e91e63" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="95" cy="110" r="3" fill="#e91e63" opacity="0.6"/>
+
+    <!-- Right page: cake illustration -->
+    <g transform="translate(170, 45)">
+      <!-- Cake base -->
+      <rect x="15" y="60" width="70" height="35" rx="5" fill="url(#cakeGrad)"/>
+      <!-- Cake top layer -->
+      <rect x="20" y="40" width="60" height="25" rx="4" fill="#A0522D"/>
+      <!-- Frosting -->
+      <path d="M20 42 Q30 30 50 35 Q70 30 80 42" fill="#D2691E" stroke="#C4621A" stroke-width="1"/>
+      <!-- Cherry on top -->
+      <circle cx="50" cy="30" r="6" fill="#DC143C"/>
+      <path d="M50 24 Q55 15 58 18" stroke="#228B22" stroke-width="1.5" fill="none"/>
+      <!-- Sparkles -->
+      <circle cx="30" cy="50" r="1.5" fill="#FFD700" opacity="0.8"/>
+      <circle cx="65" cy="55" r="1.5" fill="#FFD700" opacity="0.8"/>
+      <circle cx="48" cy="70" r="1" fill="#FFD700" opacity="0.6"/>
+    </g>
+
+    <!-- Right page: color-coded tags (params/metrics/tags) -->
+    <rect x="165" y="130" width="30" height="8" rx="4" fill="#4a9eda" opacity="0.4"/>
+    <rect x="200" y="130" width="25" height="8" rx="4" fill="#e91e63" opacity="0.4"/>
+    <rect x="230" y="130" width="20" height="8" rx="4" fill="#7cb342" opacity="0.4"/>
+
+    <!-- Right page: more text lines -->
+    <line x1="165" y1="150" x2="250" y2="150" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+    <line x1="165" y1="163" x2="235" y2="163" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+  </g>
+
+  <!-- Floating elements around the book -->
+  <!-- Detective magnifying glass -->
+  <g transform="translate(330, 80)" opacity="0.6">
+    <circle cx="12" cy="12" r="10" stroke="#667eea" stroke-width="2" fill="none"/>
+    <line x1="19" y1="19" x2="28" y2="28" stroke="#667eea" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Gear/settings icon -->
+  <g transform="translate(30, 100)" opacity="0.4">
+    <circle cx="10" cy="10" r="5" stroke="#764ba2" stroke-width="1.5" fill="none"/>
+    <line x1="10" y1="2" x2="10" y2="0" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="10" y1="18" x2="10" y2="20" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="2" y1="10" x2="0" y2="10" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="18" y1="10" x2="20" y2="10" stroke="#764ba2" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Star sparkle -->
+  <g transform="translate(350, 200)" opacity="0.5">
+    <path d="M8 0 L10 6 L16 8 L10 10 L8 16 L6 10 L0 8 L6 6 Z" fill="#f093fb"/>
+  </g>
+
+  <!-- Small star -->
+  <g transform="translate(50, 230)" opacity="0.3">
+    <path d="M5 0 L6 4 L10 5 L6 6 L5 10 L4 6 L0 5 L4 4 Z" fill="#667eea"/>
+  </g>
+</svg>

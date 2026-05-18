@@ -85,7 +85,7 @@ The webhooks API is located in the settings API module. Operations include:
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Royal Library](./model-registry) — webhooks can fire on model registration events
 - [The Judge's Tournament](./evaluation-and-scorers) — webhooks can alert when evaluation scores change
 :::

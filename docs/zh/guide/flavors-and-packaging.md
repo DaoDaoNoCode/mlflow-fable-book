@@ -106,7 +106,7 @@ Flavor 在 UI 上主要通过 LoggedModel 的 **model_type** 字段和 **Artifac
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [匠人的出厂记录](./logged-models) — Flavor 决定了 LoggedModel 上的 model_type
 - [发射台](./model-serving) — pyfunc 是部署任何 Flavor 模型的通用接口
 :::

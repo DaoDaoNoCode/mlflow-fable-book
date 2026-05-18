@@ -73,7 +73,7 @@ When you build the **Experiment List page**, you're showing Maya's kitchen — a
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Baker's Notebook](./parameters-metrics-tags) — every Run records params, metrics, and tags
 - [The Museum Vault](./artifacts) — every Run stores its output files as artifacts
 - [The Autopilot](./autologging) — autologging records Run data automatically

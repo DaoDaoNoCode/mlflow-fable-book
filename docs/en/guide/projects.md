@@ -117,6 +117,6 @@ The way to identify a project-originated run is through its tags:
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Chef's Kitchen](./experiments-and-runs) — project runs create tracking Runs
 :::

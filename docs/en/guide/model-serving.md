@@ -91,7 +91,7 @@ Serving doesn't introduce new frontend entities. The relevant data is the model'
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Royal Library](./model-registry) — models are deployed from the Registry
 - [The Universal Adapter](./flavors-and-packaging) — pyfunc provides the standard predict() interface
 - [The Harbor Master](./ai-gateway) — the Gateway can proxy to served models

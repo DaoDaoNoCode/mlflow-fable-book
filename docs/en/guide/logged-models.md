@@ -65,7 +65,7 @@ In the fable, Tomás's adapter type (sklearn, pytorch) describes which oven was 
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Universal Adapter](./flavors-and-packaging) — model_type reflects which flavor was used
 - [The Royal Library](./model-registry) — LoggedModels can be promoted to the Model Registry
 - [The Chef's Kitchen](./experiments-and-runs) — LoggedModels are created within Runs

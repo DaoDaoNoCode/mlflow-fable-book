@@ -64,7 +64,7 @@
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [大厨的厨房](./experiments-and-runs) — 参数、指标和 Tag 都挂在 Run 上
 - [美食大赛的评委](./evaluation-and-scorers) — 评估过程会产出指标，记录在评估 Run 里
 :::

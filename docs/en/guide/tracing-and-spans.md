@@ -90,7 +90,7 @@ A single trace can contain dozens of spans in a deeply nested tree. Each span ha
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Poet's Drafts](./prompts) — prompts are the templates used in traced LLM calls
 - [The Harbor Master](./ai-gateway) — the Gateway routes the LLM calls that traces capture
 - [The Quality Inspector](./issues) — issues are patterns detected across traces

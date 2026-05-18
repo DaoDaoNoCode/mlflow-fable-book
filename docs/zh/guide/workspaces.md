@@ -64,7 +64,7 @@ Headers:
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [门卫和钥匙](./rbac) — RBAC 控制 Workspace 内和跨 Workspace 的访问权限
 - [大厨的厨房](./experiments-and-runs) — 实验按 Workspace 隔离
 :::

@@ -89,7 +89,7 @@ Webhook API 在 settings 的 API 模块里。操作包括：
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [皇家图书馆](./model-registry) — Webhook 可在模型注册事件时触发
 - [美食大赛的评委](./evaluation-and-scorers) — Webhook 可在评估分数变化时告警
 :::

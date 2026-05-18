@@ -66,7 +66,7 @@ The **Model Registry** is a separate section in the sidebar. The model list is s
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Apprentice's Logbook](./logged-models) — registered model versions link back to LoggedModels
 - [The Launchpad](./model-serving) — registered models are deployed to production
 - [The Judge's Tournament](./evaluation-and-scorers) — models are evaluated before promotion

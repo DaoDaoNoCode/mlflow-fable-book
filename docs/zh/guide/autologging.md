@@ -94,7 +94,7 @@ Autologging 用的是 Python 的 monkey-patching。`mlflow.autolog()` 会把 `sk
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [大厨的厨房](./experiments-and-runs) — Autologging 自动创建 Run
 - [面包师的三色笔记](./parameters-metrics-tags) — Autologging 自动记录参数和指标，不用手写
 :::

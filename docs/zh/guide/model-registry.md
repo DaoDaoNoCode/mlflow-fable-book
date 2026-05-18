@@ -80,7 +80,7 @@
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [匠人的出厂记录](./logged-models) — 注册模型的版本关联着 LoggedModel
 - [发射台](./model-serving) — 注册模型可以直接部署到生产环境
 - [美食大赛的评委](./evaluation-and-scorers) — 模型在晋升前通常要经过评估

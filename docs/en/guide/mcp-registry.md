@@ -118,7 +118,7 @@ Based on the RFC design:
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Harbor Master](./ai-gateway) — a future MCP Gateway builds on the same Gateway infrastructure
 - [The Detective's Thread](./tracing-and-spans) — MCP server versions can be linked to traces
 :::

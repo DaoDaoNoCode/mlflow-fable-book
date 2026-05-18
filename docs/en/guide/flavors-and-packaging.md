@@ -98,7 +98,7 @@ Flavors appear in the UI primarily through the **model type** field on LoggedMod
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Apprentice's Logbook](./logged-models) — flavors determine the model_type on LoggedModels
 - [The Launchpad](./model-serving) — pyfunc is the universal interface for serving any flavor
 :::

@@ -82,7 +82,7 @@ Issue 在 Run 详情页有自己的标签页。Issue 检测的 Run 在评估 Run
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [侦探的红线](./tracing-and-spans) — Issue 从 Trace 的规律中发现
 - [美食大赛的评委](./evaluation-and-scorers) — Issue 检测是评估的一种形式
 :::

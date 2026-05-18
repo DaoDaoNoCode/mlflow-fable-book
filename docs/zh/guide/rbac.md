@@ -103,7 +103,7 @@ useMyPermissionsQuery({ resourceType, resourceId })
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [公寓楼的楼层](./workspaces) — 权限在 Workspace 范围内生效
 - [皇家图书馆](./model-registry) — 模型权限控制谁能晋升模型
 :::

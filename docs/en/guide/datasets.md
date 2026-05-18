@@ -90,7 +90,7 @@ Run-level datasets appear in the Run detail page. EvaluationDatasets have their 
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Judge's Tournament](./evaluation-and-scorers) — EvaluationDatasets are used by Scorers
 - [The Chef's Kitchen](./experiments-and-runs) — DatasetInputs record which data trained a Run
 :::

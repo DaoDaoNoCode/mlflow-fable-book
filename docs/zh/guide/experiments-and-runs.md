@@ -83,7 +83,7 @@
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [面包师的三色笔记](./parameters-metrics-tags) — 每个 Run 记录的参数、指标和 Tag
 - [博物馆的仓库](./artifacts) — 每个 Run 产出的文件都存为 Artifact
 - [自动驾驶仪](./autologging) — 自动帮你记录 Run 的一切数据

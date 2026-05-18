@@ -92,7 +92,7 @@ MLflow Tracing 跟很多主流框架集成了——OpenAI、LangChain、DSPy、V
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [写信人的模板](./prompts) — Prompt 是 Trace 中 LLM 调用所用的模板
 - [港口调度员](./ai-gateway) — 网关负责路由 Trace 捕获的 LLM 调用
 - [质检员](./issues) — Issue 是从 Trace 中发现的系统性质量问题

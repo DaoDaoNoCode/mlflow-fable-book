@@ -73,7 +73,7 @@ Evaluation uses the standard Run and Metric entities — no special "evaluation"
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Test Kitchen](./datasets) — Scorers evaluate against standardized datasets
 - [The Royal Library](./model-registry) — models are evaluated before promotion to Registry
 - [The Detective's Thread](./tracing-and-spans) — Scorers can run directly on traces

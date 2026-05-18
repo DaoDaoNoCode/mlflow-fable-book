@@ -88,7 +88,7 @@ An autologged Run is structurally identical to a manual Run. The distinguishing 
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Chef's Kitchen](./experiments-and-runs) — autologging creates Runs automatically
 - [The Baker's Notebook](./parameters-metrics-tags) — autologging captures params and metrics without manual calls
 :::

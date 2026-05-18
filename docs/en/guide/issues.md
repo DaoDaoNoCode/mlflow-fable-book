@@ -78,7 +78,7 @@ Issues have their own tab within Run detail. Issue detection runs are shown in t
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Detective's Thread](./tracing-and-spans) — issues are detected from patterns in traces
 - [The Judge's Tournament](./evaluation-and-scorers) — issue detection runs are a type of evaluation
 :::

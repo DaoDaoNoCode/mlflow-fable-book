@@ -120,6 +120,6 @@ The archival system is designed to be a backend optimization, not a user-facing 
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Detective's Thread](./tracing-and-spans) — archival manages the lifecycle of trace data
 :::

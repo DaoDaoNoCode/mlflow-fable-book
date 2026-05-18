@@ -59,7 +59,7 @@ If you create a new API call that doesn't go through `FetchUtils`, it won't get 
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Gatekeepers](./rbac) — RBAC controls access within and across workspaces
 - [The Chef's Kitchen](./experiments-and-runs) — experiments are scoped to workspaces
 :::

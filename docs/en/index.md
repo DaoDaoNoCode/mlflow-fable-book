@@ -4,6 +4,9 @@ hero:
   name: The MLflow Fable Book
   text: ML Concepts Through Stories
   tagline: Understand MLflow concepts through everyday stories — for developers, teams, and anyone new to the platform
+  image:
+    src: /hero.svg
+    alt: An open book with a chocolate cake, metric charts, and color-coded tags
   actions:
     - theme: brand
       text: Start Reading

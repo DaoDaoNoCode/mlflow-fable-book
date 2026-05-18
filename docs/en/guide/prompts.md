@@ -89,7 +89,7 @@ Prompts are managed via Unity Catalog OSS. The Prompt and PromptVersion are sepa
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Detective's Thread](./tracing-and-spans) — prompts used in LLM calls appear in traces
 - [The Harbor Master](./ai-gateway) — prompts are sent through Gateway endpoints
 :::

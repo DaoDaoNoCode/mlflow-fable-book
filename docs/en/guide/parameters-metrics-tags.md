@@ -60,7 +60,7 @@ In the fable, Thomas writes "12 hours" — it's text in a notebook. Parameters a
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Chef's Kitchen](./experiments-and-runs) — params, metrics, and tags belong to Runs
 - [The Judge's Tournament](./evaluation-and-scorers) — evaluation produces metrics on evaluation Runs
 :::

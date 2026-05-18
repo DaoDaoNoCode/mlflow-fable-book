@@ -69,7 +69,7 @@ The **Gateway section** shows the Harbor Master's roster. Each endpoint card sho
 
 ---
 
-::: details See Also
+::: info See Also
 - [The Detective's Thread](./tracing-and-spans) — Gateway calls are captured in traces
 - [The Poet's Drafts](./prompts) — prompts are sent through Gateway endpoints
 - [The Launchpad](./model-serving) — the Gateway can proxy to served MLflow models

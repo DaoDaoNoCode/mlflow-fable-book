@@ -126,6 +126,6 @@ Trace Archival 目前处于 RFC 阶段（[RFC 0001](https://github.com/mlflow/rf
 
 ---
 
-::: details 相关寓言
+::: info 相关寓言
 - [侦探的红线](./tracing-and-spans) — 归档管理的就是 Trace 数据的生命周期
 :::

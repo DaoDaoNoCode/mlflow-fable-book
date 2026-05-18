@@ -4,6 +4,9 @@ hero:
   name: MLflow 寓言书
   text: 听故事，懂 ML
   tagline: 二十一个小故事，帮你轻松理解 MLflow 的每个核心概念
+  image:
+    src: /hero.svg
+    alt: 一本打开的书，上面有巧克力蛋糕、指标图表和三色标签
   actions:
     - theme: brand
       text: 开始阅读
