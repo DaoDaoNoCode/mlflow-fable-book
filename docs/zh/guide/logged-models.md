@@ -1,0 +1,70 @@
+# 匠人的出厂记录
+
+> **对应概念：** LoggedModel
+
+## 故事
+
+**阿毕**是小梅厨房里的记录员。他坐在门口一张小桌子旁，每次小梅做完一个蛋糕——每次她调用 `log_model()`——阿毕就打开记录簿写一条新记录。不是随手一记，是一份出生证明。
+
+「小梅，在巧克力蛋糕实验里，Run 47，用托马斯的 sklearn 转换头做了一个蛋糕，存在莉娜的保管库 7 号架。老王在这个 Run 上记了 3 个参数和 2 个指标。」每一条记录都把蛋糕跟所有东西关联起来：实验、Run、Artifact、Flavor。在阿毕的记录簿里，没有什么东西是孤立存在的。
+
+大多数记录就留在簿子里——横跨几十个 Run，记录着小梅试过的每一个配方，即使那些蛋糕不值得提拔。但真正好的呢？那些会被送到楼上阿赫迈德的皇家图书馆。「我的记录簿是蛋糕出生的地方，」阿毕常说。「阿赫迈德的图书馆才是蛋糕成为正式作品的地方。但没有出生证明，什么都进不去。」
+
+## 概念解读
+
+**LoggedModel** 是 MLflow 3 引入的一等公民实体。当你调用 `log_model()` 时会自动创建，它贯穿模型的整个生命周期——跨环境、跨 Run。
+
+LoggedModel 不只是一条简单的记录，它还关联着 Artifact（模型文件）、指标、参数、以及产出这个模型的代码。设置了 active model context 之后，后续所有的 Trace 也会自动关联到这个 LoggedModel 上，不需要手动操作。
+
+不是每个 LoggedModel 最终都会进入 Model Registry。Registry 是给要上线的模型用的，LoggedModel 是更完整的记录。
+
+::: tip 一句话总结
+- **LoggedModel** = 调用 `log_model()` 时自动创建的模型记录
+- 关联着 Artifact、指标、参数和代码
+- 贯穿模型的整个生命周期，Trace 可以自动关联
+- **model_type** = 用什么 ML 框架创建的（PyTorch、sklearn、transformers 等）
+:::
+
+## 前端开发者参考
+
+LoggedModel 出现在实验的 **Models 标签页**里——汇总这个实验所有 Run 产出的模型。每个 LoggedModel 有详情页，可以浏览 Artifact，也可以一键提升到 Model Registry。
+
+| 组件 | 对应什么 |
+|------|---------|
+| `ExperimentLoggedModelListPage` | Models 标签页——实验里所有 LoggedModel |
+| `ExperimentLoggedModelDetailsPage` | LoggedModel 详情，包含 Artifact 和元数据 |
+| 「注册模型」操作 | 把 LoggedModel 提升到 Model Registry |
+
+### 数据长什么样
+
+```typescript
+// LoggedModelProto（前端类型）—— 嵌套的 info/data 结构
+{
+  info: {
+    model_id: "lm-789",
+    name: "my-classifier",
+    experiment_id: "123",
+    source_run_id: "abc-def-456",    // 哪个 Run 产出的
+    artifact_uri: "s3://bucket/path/model",
+    model_type: "sklearn",           // 用的什么 ML 框架
+    status: "LOGGED_MODEL_READY",
+    creation_timestamp_ms: 1700000000000,
+  },
+  data: {
+    params: [{ key: "n_estimators", value: "100" }],
+    metrics: [{ key: "accuracy", value: 0.95 }],
+  },
+}
+```
+
+::: info model_type 是什么？
+故事里老毕记的「蒸汽弯曲工艺」描述了家具是怎么做出来的。在 MLflow 里，`model_type` 描述的是用哪个 ML 框架创建的模型——PyTorch、TensorFlow、scikit-learn、transformers 等。不同框架保存和加载模型的方式不同，model_type 告诉 MLflow 该怎么处理这个模型文件。
+:::
+
+---
+
+::: details 相关寓言
+- [万能转换头](./flavors-and-packaging) — model_type 反映用了哪种 Flavor
+- [皇家图书馆](./model-registry) — LoggedModel 可以提升到 Model Registry
+- [大厨的厨房](./experiments-and-runs) — LoggedModel 在 Run 中产生
+:::

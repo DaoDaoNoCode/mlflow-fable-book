@@ -1,0 +1,19 @@
+{
+  "name": "mlflow-fable-book",
+  "version": "1.0.0",
+  "description": "The MLflow Fable Book — a developer's guide through stories",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "mermaid": "^11.15.0",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
