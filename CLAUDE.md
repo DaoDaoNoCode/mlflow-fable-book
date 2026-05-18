@@ -20,14 +20,36 @@ A VitePress documentation site that explains MLflow core concepts through fables
 ### First-mention pattern
 Introduce naturally on first use: "每次尝试叫做一个 Run". After that, just use the English term — no parentheses, no forced translation.
 
-## Chinese Writing Style
+## Chinese Writing: 信达雅 Three-Layer Rewriting Method
 
-- Write as if originally conceived in Chinese — NOT translated from English
-- Use short clauses, natural sentence flow, no English-style long attributive chains
-- Conversational but clear — like explaining to a colleague over coffee
-- Introduce English terms once, then use them directly
-- Section headers should be natural: 「概念解读」「对应到 UI」「数据长什么样」
-- NEVER use translationese (翻译腔)
+**CRITICAL: Never translate from English. Always rewrite from concept outlines.**
+
+### Process (for each story)
+1. **信 (faithful):** Extract ONLY the concept, characters, key story beats, and cross-references from the EN version. Do NOT read the English prose.
+2. **达 (expressive):** Write the Chinese story from scratch using natural Chinese narrative patterns. Think in Chinese. Use Chinese storytelling rhythm.
+3. **雅 (elegant):** Self-review and polish. Read it aloud in your head — does it sound like someone talking, or like a document?
+
+### Mandatory Rules
+- **短句为主** — keep clauses under 15 characters where possible. Break long sentences.
+- **中文语序** — time/place comes first. 「周三下午，小梅在厨房里...」not「小梅在厨房里，在周三下午...」
+- **口语化连接** — use 先说/接着/说到底/其实/结果/后来, NOT 首先/其次/然而/此外/因此/值得注意的是
+- **动词驱动** — Chinese prefers verbs over nominalization.「她记下了配方」not「她对配方进行了记录」
+- **省略主语** — Chinese naturally drops subjects when clear from context.「试了三次都失败了」not「她试了三次但她都失败了」
+- **拟声/口头禅** — sprinkle in natural spoken markers:「嘿」「得了」「行吧」「这下好了」
+
+### Banned Patterns (翻译腔 red flags)
+- ❌ 然而 / 此外 / 不仅...而且 / 值得注意的是 / 通过...来 / 基于...的
+- ❌ 它是一个... / 这是一种... (topic-comment, not 「是」sentences)
+- ❌ Long attributive chains before nouns (English-style modifiers)
+- ❌ 被 (passive) when active voice is natural
+- ❌ Overuse of 的 in chains:「小梅的厨房里的桌子上的笔记本」→「小梅厨房桌上那本笔记」
+
+### Quality Check
+After writing, scan for these — if you find more than 2, rewrite:
+- 然而 / 此外 / 因此 appearing as sentence openers
+- Sentences longer than 30 characters without a comma
+- 是...的 structure used more than twice in one paragraph
+- 被 used where 把/让/给 or active voice works better
 
 ## Fable Structure
 

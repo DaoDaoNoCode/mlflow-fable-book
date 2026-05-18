@@ -1,0 +1,138 @@
+/* ===== Hero Section Glow ===== */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #667eea33 0%, #764ba233 100%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* ===== Brand Colors ===== */
+:root {
+  --vp-c-brand-1: #667eea;
+  --vp-c-brand-2: #764ba2;
+  --vp-c-brand-3: #8b5cf6;
+  --vp-c-brand-soft: rgba(102, 126, 234, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #8b9cf7;
+  --vp-c-brand-2: #9d72c8;
+  --vp-c-brand-3: #a78bfa;
+  --vp-c-brand-soft: rgba(139, 156, 247, 0.14);
+}
+
+/* ===== Smooth Page Transitions ===== */
+.VPContent {
+  transition: opacity 0.25s ease;
+}
+
+/* ===== Sidebar Active Item Glow ===== */
+.VPSidebarItem.is-active > .item > .indicator {
+  background: linear-gradient(180deg, #667eea, #764ba2) !important;
+}
+
+/* ===== Tip/Info/Warning Callout Polish ===== */
+.vp-doc .custom-block.tip {
+  border-color: #667eea;
+  background-color: rgba(102, 126, 234, 0.06);
+}
+
+.dark .vp-doc .custom-block.tip {
+  background-color: rgba(102, 126, 234, 0.1);
+}
+
+.vp-doc .custom-block.info {
+  border-color: #7cb342;
+  background-color: rgba(124, 179, 66, 0.06);
+}
+
+/* ===== Code Block Polish ===== */
+.vp-doc div[class*='language-'] {
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* ===== Feature Cards on Home ===== */
+.VPFeature {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.12);
+}
+
+/* ===== Details/See Also Blocks ===== */
+.vp-doc details {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  padding: 12px 16px;
+  transition: border-color 0.2s;
+}
+
+.vp-doc details:hover {
+  border-color: #667eea;
+}
+
+.vp-doc details summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: #667eea;
+}
+
+.dark .vp-doc details summary {
+  color: #8b9cf7;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* ===== Table Polish ===== */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc tr:hover td {
+  background-color: rgba(102, 126, 234, 0.04);
+}
+
+.dark .vp-doc tr:hover td {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+/* ===== Reading Progress Bar ===== */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  z-index: 100;
+  transition: width 0.1s linear;
+}

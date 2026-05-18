@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default withMermaid(defineConfig({
+export default defineConfig({
   title: 'The MLflow Fable Book',
   description: 'MLflow concepts explained through fables — a developer\'s guide through stories',
 
@@ -208,4 +207,4 @@ export default withMermaid(defineConfig({
       level: [2, 3],
     },
   },
-}))
+})

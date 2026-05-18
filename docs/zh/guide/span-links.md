@@ -12,19 +12,23 @@ Span Links 目前处于 RFC 阶段（[RFC 0003](https://github.com/mlflow/rfcs/t
 
 ## 故事
 
-小梅的厨房现在有三个 AI 助手帮忙做巧克力蛋糕生意，但它们从来不同时工作。
+小梅厨房里有三个 AI 助手，从来不同时干活。
 
-**Agent A**——趋势监测员——每小时跑一次，扫描社交媒体上的蛋糕趋势和口味偏好。每次运行都是自己的一条 Trace，老陈档案系统里的一次独立调查。周二上午，Agent A 的 Trace #A-117 标记了一波咸焦糖的需求激增。
+**Agent A** 是趋势监测员。每小时跑一次，扫社交媒体上的蛋糕趋势。每次跑完是自己的一条 Trace——老陈档案里一次独立调查。周二上午，Agent A 的 Trace #A-117 标记了一波海盐焦糖的需求激增。
 
-**Agent B**——总结员——每天跑一次，读取 Agent A 所有的每小时报告，浓缩成一份趋势简报。Agent B 不是 Agent A 的子任务——它不在 Agent A 的 Trace 里运行，也不可能是一个嵌套的 Span。它在几个小时后、一条完全独立的 Trace 里运行。但它的工作依赖 Agent A 的输出。所以 Agent B 的总结 Span 里包含了一个 **Span Link**——一次握手，指向 Agent A 在 Trace #A-117 里的监测 Span，属性里注明「特别是市场趋势那一节」。
+**Agent B** 是总结员。每天跑一次，读 Agent A 所有的小时报告，浓缩成一份趋势简报。Agent B 不是 Agent A 的子任务——不在同一条 Trace 里，也不可能嵌套成子 Span。它在几个小时后、一条独立的 Trace 里跑。但它的工作依赖 Agent A 的输出。
 
-**Agent C**——周报发布员——每周跑一次，拿起 Agent B 的总结编排成小梅的客户周报。Agent C 的发布 Span link 回 Agent B 的总结 Span，注明「我用这份简报作为素材来源」。
+**Agent C** 是周报发布员。每周跑一次，拿 Agent B 的总结编成小梅的客户周报。
 
-每个 Link 是**单向的**。Agent B 指向 Agent A，但 Agent A 的 Span 上什么都没写——它甚至不知道谁会消费自己的输出。Link 可以带上下文：哪一节有用、是什么关系、为什么要连。
+先说没有 Span Link 之前的事。一个顾客投诉周报推荐的「海盐焦糖趋势」过期两周了。老陈去查——Agent C 的 Trace 显示用了一份总结，但追不到是 Agent B 的*哪份*总结，更追不回 Agent A 的*哪次*扫描。每个 Trace 边界都是死路。
 
-在有 Span Link 之前，一个顾客投诉周报里推荐的「海盐焦糖趋势」已经过时两周了。老陈去查，但在 Trace 的边界上撞了墙——Agent C 的 Trace 显示它用了一份总结，但没办法追溯是 Agent B 的*哪份*总结、更追不回 Agent A 的*哪次*扫描。每个 Trace 边界都是一条死路。有了 Span Link，老陈现在可以顺着链条穿越所有三条 Trace——几秒钟就找到了问题：Agent B 用了一份过期的缓存总结，而不是最新的扫描结果。
+后来有了 **Span Link**。Agent B 的总结 Span 里加了一个 Link，指向 Agent A 在 Trace #A-117 里的监测 Span，属性里注明「特别是市场趋势那一节」。Agent C 的发布 Span 也 link 回 Agent B 的总结 Span，注明「素材来源」。
 
-「父子 Span 是给发生在彼此*内部*的事情用的，」老陈解释道。「Span Link 是给*因为*彼此才发生的事情用的。」
+Link 是单向的。B 指向 A，但 A 上什么都没写——它甚至不知道谁会消费自己的输出。
+
+有了这条链子，老陈几秒钟就查到了 bug：Agent B 用了一份过期的缓存总结，没拿最新的扫描结果。三条 Trace，一路追下来，畅通无阻。
+
+「父子 Span 是给发生在彼此*内部*的事情用的，」老陈说。「Span Link 是给*因为*彼此才发生的事情用的。」
 
 ## 概念解读
 
