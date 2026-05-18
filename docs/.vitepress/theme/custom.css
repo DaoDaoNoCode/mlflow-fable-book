@@ -279,18 +279,3 @@
 .vp-doc.container {
   max-width: 800px;
 }
-
-/* ===== Landing Page — Hide Nav/Footer for Full-Screen Splash ===== */
-.landing ~ .VPFooter,
-.landing ~ footer {
-  display: none;
-}
-
-/* Hide content padding on landing page */
-.VPPage:has(.landing) {
-  padding: 0 !important;
-}
-
-.VPPage:has(.landing) .VPContent {
-  padding: 0 !important;
-}
