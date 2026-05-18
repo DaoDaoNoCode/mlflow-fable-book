@@ -64,6 +64,9 @@ export default defineConfig({
                 { text: 'The Test Kitchen', link: '/en/guide/datasets' },
                 { text: 'The Judge\'s Tournament', link: '/en/guide/evaluation-and-scorers' },
                 { text: 'The Quality Inspector', link: '/en/guide/issues' },
+                { text: '🔜 The Tool Shed Registry', link: '/en/guide/mcp-registry' },
+                { text: '🔜 The Cold Storage', link: '/en/guide/trace-archival' },
+                { text: '🔜 The Handshake', link: '/en/guide/span-links' },
               ],
             },
             {
@@ -74,15 +77,6 @@ export default defineConfig({
                 { text: 'The Gatekeepers', link: '/en/guide/rbac' },
                 { text: 'The Signal Flares', link: '/en/guide/webhooks' },
                 { text: 'The Blueprint', link: '/en/guide/projects' },
-              ],
-            },
-            {
-              text: 'Coming Soon (RFCs)',
-              collapsed: false,
-              items: [
-                { text: 'The Tool Shed Registry', link: '/en/guide/mcp-registry' },
-                { text: 'The Cold Storage', link: '/en/guide/trace-archival' },
-                { text: 'The Handshake', link: '/en/guide/span-links' },
               ],
             },
             {
@@ -151,6 +145,9 @@ export default defineConfig({
                 { text: '试菜间的食材单', link: '/zh/guide/datasets' },
                 { text: '美食大赛的评委', link: '/zh/guide/evaluation-and-scorers' },
                 { text: '质检员', link: '/zh/guide/issues' },
+                { text: '🔜 工具棚的登记处', link: '/zh/guide/mcp-registry' },
+                { text: '🔜 冷库', link: '/zh/guide/trace-archival' },
+                { text: '🔜 握手', link: '/zh/guide/span-links' },
               ],
             },
             {
@@ -161,15 +158,6 @@ export default defineConfig({
                 { text: '门卫和钥匙', link: '/zh/guide/rbac' },
                 { text: '信号弹', link: '/zh/guide/webhooks' },
                 { text: '施工蓝图', link: '/zh/guide/projects' },
-              ],
-            },
-            {
-              text: '即将推出（RFC）',
-              collapsed: false,
-              items: [
-                { text: '工具棚的登记处', link: '/zh/guide/mcp-registry' },
-                { text: '冷库', link: '/zh/guide/trace-archival' },
-                { text: '握手', link: '/zh/guide/span-links' },
               ],
             },
             {

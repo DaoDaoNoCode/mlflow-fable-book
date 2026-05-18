@@ -12,7 +12,7 @@ Trace Archival is currently in the RFC stage ([RFC 0001](https://github.com/mlfl
 
 ## The Story
 
-After six months of operation, Detective Chen had a problem. His filing cabinets — the database where every trace and span lived — were overflowing. Thousands of traces from Maya's experiments, Rodrigo's gateway routing, Rosa's evaluations. Each trace contained a tree of spans, and some spans carried megabytes of LLM input and output. The cabinet was expensive, and searches were getting slower by the week.
+After six months of operation, Detective Chen had a problem that success had created. Maya's cake business was thriving — hundreds of orders a day through Dr. Patel's counter, every one traced. The Ghent cocoa incident alone (Issue #23) had generated 47 detailed traces, each with nested spans full of megabyte-sized LLM inputs and outputs. Add Rosa's evaluation runs, Rodrigo's gateway routing logs, and the three AI agents' hourly monitoring — Chen's filing cabinets were overflowing. The database was expensive, and searches that used to take milliseconds now took seconds.
 
 Chen proposed **cold storage**. Recent traces — anything from the last 30 days — stayed in the filing cabinet for fast access. These were the hot cases, the ones people queried daily. Older traces got boxed up and moved to a warehouse across town — object storage, cheap and vast, but a bit slower to retrieve. The key insight: the catalog card for each trace stayed in the cabinet. It recorded the trace ID, timestamps, status, tags, and key span-level details like type and duration. Only the bulky span content — the raw inputs and outputs — moved to the warehouse.
 
