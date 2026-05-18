@@ -18,6 +18,19 @@
   }
 }
 
+/* ===== Hero Image Size ===== */
+.VPHero .VPImage {
+  max-width: 420px !important;
+  max-height: 420px !important;
+}
+
+@media (min-width: 960px) {
+  .VPHero .VPImage {
+    max-width: 500px !important;
+    max-height: 500px !important;
+  }
+}
+
 /* ===== Brand Colors ===== */
 :root {
   --vp-c-brand-1: #667eea;
