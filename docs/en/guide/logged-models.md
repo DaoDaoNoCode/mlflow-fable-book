@@ -60,7 +60,7 @@ LoggedModels appear in the **Models tab** within an experiment — all models ac
 ```
 
 ::: info What is "model_type"?
-In the fable, the "technique" (steam-bending, hand-carving) describes *how* the furniture was made. In MLflow, `model_type` describes *which ML framework* was used to create the model — PyTorch, TensorFlow, scikit-learn, transformers, etc. This matters because each framework saves and loads models differently. The model type tells MLflow how to handle the model files.
+In the fable, Tomás's adapter type (sklearn, pytorch) describes which oven was used to bake the cake. In MLflow, `model_type` describes *which ML framework* was used to create the model — PyTorch, TensorFlow, scikit-learn, transformers, etc. This matters because each framework saves and loads models differently. The model type tells MLflow how to handle the model files.
 :::
 
 ---

@@ -12,7 +12,7 @@ Quick reference for every MLflow term, with the fable character that represents 
 | Metric | Thomas's red ink | A numeric result from a run, can have step history |
 | Tag | Thomas's green sticky note | Metadata label for filtering and organization |
 | Artifact | Lena's vault objects | An actual file (model, data, chart) stored alongside a run |
-| Autologging | Lena's autopilot | One-line automatic tracking — patches 30+ frameworks to log params, metrics, and models without manual calls |
+| Autologging | Nina's autopilot | One-line automatic tracking — patches 30+ frameworks to log params, metrics, and models without manual calls |
 
 ## Model Management
 

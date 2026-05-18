@@ -10,7 +10,7 @@ Imagine all our characters living in the same town, working together. Here's how
 
 **Chef Maya** sets up her kitchen (Experiment) and starts trying recipes. But she learned the hard way — she lost her best recipe once because she didn't write it down. Now every attempt is a Run, carefully recorded. Her **Autopilot** (Autologging) handles the note-taking automatically — every parameter, every metric, logged without her lifting a pen.
 
-**Baker Thomas** organizes Maya's notes in three colors: blue for inputs (Parameters), red for results (Metrics), green for labels (Tags). **Sculptor Lena** stores the actual cakes and files (Artifacts) in her vault — the heavy things that don't fit in a notebook.
+**Baker Thomas** organizes Maya's notes in three colors: blue for inputs (Parameters), red for results (Metrics), green for labels (Tags). **Lena** stores the actual cakes and files (Artifacts) in her temperature-controlled vault — the heavy things that don't fit in a notebook. **Nina**, the newest team member, discovers the Autopilot that records everything automatically.
 
 Every cake Maya makes gets an entry in **Obi's logbook** (LoggedModel) — a record linking the cake to the kitchen, the attempt, and the vault shelf. The cake was saved using **Tomás's universal adapter** (Flavor/pyfunc) — a standard wrapping that makes it work anywhere, regardless of what oven (framework) baked it.
 
