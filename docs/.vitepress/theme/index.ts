@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import ArchitectureDiagram from './components/ArchitectureDiagram.vue'
 import DataFlowDiagram from './components/DataFlowDiagram.vue'
 import ReadingProgress from './components/ReadingProgress.vue'
+import LandingPage from './components/LandingPage.vue'
 import NotFound from './components/NotFound.vue'
 import './custom.css'
 import { h } from 'vue'
@@ -16,6 +17,7 @@ export default {
   enhanceApp({ app }) {
     app.component('ArchitectureDiagram', ArchitectureDiagram)
     app.component('DataFlowDiagram', DataFlowDiagram)
+    app.component('LandingPage', LandingPage)
   },
   NotFound,
 }

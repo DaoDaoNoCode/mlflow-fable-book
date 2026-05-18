@@ -1,13 +1,6 @@
 ---
 layout: page
+title: The MLflow Fable Book
 ---
 
-<script setup>
-import { onMounted } from 'vue'
-import { useRouter, withBase } from 'vitepress'
-
-onMounted(() => {
-  const router = useRouter()
-  router.go(withBase('/en/'))
-})
-</script>
+<LandingPage />
