@@ -28,20 +28,10 @@
 
 ## 知识来源
 
-保证准确性的记忆文件，由 Claude Code 在多次会话中分析 MLflow 源代码生成：
-
-| 记忆文件 | 提供了什么 |
-|---------|-----------|
-| `data-model.md` | MLflow 全部实体，5 层表示（protobuf → SQLAlchemy → Python → REST → TypeScript）的字段和关系 |
-| `frontend-architecture.md` | React/TypeScript SPA 结构、路由、状态管理、API 层 |
-| `frontend-page-inventory.md` | 前端每一条路由、组件、页面 ID 和 API 端点 |
-| `backend-architecture.md` | 9 个子系统、Store 接口、插件系统、服务器架构 |
-| `backend-subsystem-relationships.md` | 子系统之间怎么连——共享 Store、数据流、集成点 |
-| `end-to-end-flows.md` | 在实际源代码中追踪的完整数据流 |
-| `rest-api-surface.md` | 约 198 个 REST API 端点的方法、路径和操作 |
-| `frontend-patterns.md` | i18n、特性开关、表单、错误处理、RBAC、暗色模式等模式 |
-| `testing-architecture.md` | 测试组织、fixture、CI/CD 工作流 |
-| `infrastructure-patterns.md` | 配置系统、数据库迁移、插件、CLI、错误处理 |
+| 工具 | 干了什么 | 链接 |
+|------|---------|------|
+| **Graphify** | 代码知识图谱工具，索引了 MLflow 仓库结构，帮助理解代码关系和架构。 | [github.com/nicobailon/graphify](https://github.com/nicobailon/graphify) |
+| **Claude Code 自动记忆** | 持久化记忆系统，跨多次会话分析 MLflow 源代码，生成了 15 个结构化文档文件（数据模型、架构、API 接口等），为每个寓言的准确性提供事实基础。 | Claude Code 内置功能 |
 
 ## 用到的方法
 

@@ -28,20 +28,10 @@ This book wouldn't exist without these open-source projects, tools, and communit
 
 ## The Knowledge Sources
 
-The memory files that ensured accuracy were built by Claude Code analyzing the MLflow source code across multiple prior sessions:
-
-| Memory File | What It Provided |
-|-------------|-----------------|
-| `data-model.md` | All MLflow entities, their fields, relationships across 5 layers (protobuf → SQLAlchemy → Python → REST → TypeScript) |
-| `frontend-architecture.md` | React/TypeScript SPA structure, routing, state management, API layer |
-| `frontend-page-inventory.md` | Every route, component, page ID, and API endpoint in the frontend |
-| `backend-architecture.md` | 9 subsystems, store interfaces, plugin system, server architecture |
-| `backend-subsystem-relationships.md` | How subsystems connect — shared stores, data flows, integration points |
-| `end-to-end-flows.md` | Complete data flows traced through actual source code |
-| `rest-api-surface.md` | ~198 REST API endpoints with methods, paths, and operations |
-| `frontend-patterns.md` | i18n, feature flags, forms, error handling, RBAC, dark mode patterns |
-| `testing-architecture.md` | Test organization, fixtures, CI/CD workflows |
-| `infrastructure-patterns.md` | Configuration, migrations, plugins, CLI, error handling |
+| Tool | Role | Link |
+|------|------|------|
+| **Graphify** | Codebase knowledge graph tool that indexed the MLflow repo structure, helping understand code relationships and architecture. | [github.com/nicobailon/graphify](https://github.com/nicobailon/graphify) |
+| **Claude Code Auto-Memory** | Persistent memory system that built 15 structured documentation files (data model, architecture, API surface, etc.) by analyzing the MLflow source code across sessions. These served as the ground truth for every fable's accuracy. | Built into Claude Code |
 
 ## The Techniques
 
