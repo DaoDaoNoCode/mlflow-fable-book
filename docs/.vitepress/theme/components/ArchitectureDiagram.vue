@@ -1,6 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { useRouter } from 'vitepress'
+import { useRouter, withBase } from 'vitepress'
 
 const props = defineProps({
   lang: { type: String, default: 'en' }
@@ -65,7 +65,7 @@ const categories = computed(() => [
 ])
 
 function navigate(link) {
-  router.go(link)
+  router.go(withBase(link))
 }
 </script>
 
