@@ -19,15 +19,23 @@
 }
 
 /* ===== Hero Image Size ===== */
-.VPHero .VPImage {
+.VPHero .image-container,
+.VPHero .image-container .image-bg,
+.VPHero .image-container img {
   max-width: 420px !important;
   max-height: 420px !important;
+  width: 420px !important;
+  height: 420px !important;
 }
 
 @media (min-width: 960px) {
-  .VPHero .VPImage {
+  .VPHero .image-container,
+  .VPHero .image-container .image-bg,
+  .VPHero .image-container img {
     max-width: 500px !important;
     max-height: 500px !important;
+    width: 500px !important;
+    height: 500px !important;
   }
 }
 
