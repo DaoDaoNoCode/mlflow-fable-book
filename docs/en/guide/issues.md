@@ -8,7 +8,7 @@ Detective Chen dealt in individual cases. A customer got the wrong cake — Chen
 
 Then the town hired **Inspector Voss**.
 
-Voss didn't look at individual traces. She looked at *patterns*. On Monday, a customer named Mrs. Okafor complained that her chocolate cake tasted slightly bitter. Chen pulled the trace — the Yara template was correct, the oven call was clean, the timing was normal. Just an unhappy customer. An assessment: one thumbs-down, one data point. On Tuesday, two more complaints. Wednesday, six. By Friday, Voss had forty-seven customers in one week — all reporting the same slight bitterness, all at the same step in Chen's traces, all from cakes made after Rodrigo's gateway switched to a new cocoa supplier in Ghent.
+Voss didn't look at individual traces. She looked at *patterns*. On Monday, a customer named Mrs. Okafor complained that her chocolate cake tasted slightly bitter. Chen pulled the trace — the Yara template was correct, the oven call was clean, the timing was normal. Just an unhappy customer. An assessment: one thumbs-down, one data point. On Tuesday, two more complaints. Wednesday, six. By Friday, Voss had forty-seven customers in one week — all reporting the same slight bitterness, all at the same step in Chen's traces, all from cakes made after Rodrigo's gateway had fallen back to the backup cocoa supplier in Ghent.
 
 One unhappy customer is an Assessment. Forty-seven is a systematic **Issue**.
 

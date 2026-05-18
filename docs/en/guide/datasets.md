@@ -4,7 +4,7 @@
 
 ## The Story
 
-**Mika** ran the test kitchen next door to Maya's bakery. Before any cake could earn the `@champion` alias in Ahmed's registry, it had to survive Mika's standardized taste test. No exceptions — not even for Maya.
+**Mika** ran the test kitchen next door to Maya's bakery. Before any cake could be fairly judged in Rosa's tournament — the one that decided who earned `@champion` — it had to be tested against Mika's standardized ingredient kits. No shortcuts, not even for Maya.
 
 The rule existed because of what happened on a Monday. Mika tested Maya's new dark chocolate recipe with high-grade Belgian cocoa from Rodrigo's preferred supplier. Rich, balanced, perfect. She declared it ready for Ahmed's library. On Tuesday, her sous chef Kai tested the same recipe with the budget cocoa from the backup supplier in Ghent. Thin, bitter, terrible. Kai walked into the kitchen and said, "Maya's recipe doesn't work."
 

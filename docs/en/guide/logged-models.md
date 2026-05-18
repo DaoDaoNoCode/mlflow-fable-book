@@ -6,9 +6,9 @@
 
 **Obi** was the record-keeper in Maya's kitchen. He sat at a small desk by the door, and every time Maya finished a cake — every time she called `log_model()` — Obi opened his logbook and wrote a new entry. Not a quick scribble. A birth certificate.
 
-"Maya, working in the Chocolate Cake experiment, Run 47, produced a cake using Tomás's sklearn adapter, stored in Lena's vault on shelf 7. Thomas logged 3 parameters and 2 metrics on this run." Every entry connected the cake back to everything: the experiment, the run, the artifacts, the flavor. Nothing existed in isolation in Obi's book.
+"Maya, working in the Chocolate Cake experiment, Run 52, produced a cake using Tomás's sklearn adapter, stored in Lena's vault on shelf 7. Thomas logged 3 parameters and 2 metrics on this run." Every entry connected the cake back to everything: the experiment, the run, the artifacts, the flavor. Nothing existed in isolation in Obi's book.
 
-Most entries stayed in the logbook — valuable records of what Maya had tried across dozens of runs, even when the cakes weren't worth promoting. But the really good ones? Maya would call `register_model()` and the cake would get sent upstairs to Ahmed's Royal Library, where it became a **Model Version** — an official catalog entry with its own version number and aliases like `@champion`. The Model Version linked back to Obi's logbook entry via `model_id`, so the full lineage was never lost.
+Most entries stayed in the logbook — valuable records of what Maya had tried across dozens of runs, even when the cakes weren't worth promoting. But the really good ones? Maya would call `register_model()` and the cake would get sent over to Ahmed's Royal Library, where it became a **Model Version** — an official catalog entry with its own version number and aliases like `@champion`. The Model Version linked back to Obi's logbook entry via `model_id`, so the full lineage was never lost.
 
 "Here's the difference," Obi explained to Nina one morning. "My logbook entry is created automatically the moment Maya finishes a cake — every cake gets one, good or bad. Ahmed's library entry is a deliberate promotion — someone decides *this* cake deserves to be official. My logbook is where cakes are born. Ahmed's library is where they become official. But without a birth certificate, nothing gets in."
 
