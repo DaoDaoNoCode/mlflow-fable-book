@@ -2,8 +2,8 @@
 layout: home
 hero:
   name: MLflow 寓言书
-  text: 用故事讲懂 ML 概念
-  tagline: 用故事搞懂 MLflow——给开发者、团队、和所有刚接触这个平台的人
+  text: 听故事，懂 ML
+  tagline: 二十一个小故事，帮你轻松理解 MLflow 的每个核心概念
   actions:
     - theme: brand
       text: 开始阅读
@@ -12,10 +12,10 @@ hero:
       text: 术语速查
       link: /zh/reference/glossary
 features:
-  - title: 类比学习
-    details: 每个 ML 概念都映射到一个生活场景——大厨、侦探、诗人、港口调度员，让机器学习变得直觉化。
-  - title: 前端开发者彩蛋
-    details: 每个寓言末尾有一节把概念对应到 React 组件和数据结构——前端开发者的专属参考，其他人可以跳过。
+  - title: 故事学概念
+    details: 大厨做蛋糕、侦探查案、诗人改稿、港口调度员分流——每个 ML 概念都有一个生活场景帮你秒懂。
+  - title: 前端开发者加餐
+    details: 每篇寓言末尾附一节 React 组件和数据结构的对照说明。前端同学直接用，其他人跳过不影响。
   - title: 中英双语
-    details: 完整的中英文版本，右上角一键切换。术语遵循中文技术社区的真实用法。
+    details: 英文中文各一套完整版本，右上角一键切换。术语按中文技术圈的真实习惯来。
 ---

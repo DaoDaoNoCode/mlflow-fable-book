@@ -34,16 +34,16 @@ MCP Registry 目前处于 RFC 阶段（[RFC 0004](https://github.com/mlflow/rfcs
 
 **MCP（Model Context Protocol）** 是一个开放标准，定义了 AI Agent 怎么发现和使用这些工具。一个 **MCP Server** 就是提供工具的程序——「Brave Search」提供网页搜索，「GitHub」提供仓库访问，「Postgres」提供数据库查询。
 
-MLflow 的 **MCP Registry** 是一个统一管理的、带版本控制的 MCP Server 目录。它是以下这些事情的权威来源：
+MLflow 的 **MCP Registry** 就是一个带版本管理的 MCP Server 目录，集中管理所有工具。你想知道什么，问它就行：
 
-- **有哪些 MCP Server**，它们是什么状态（draft、active、deprecated）
-- **版本历史**——随着定义的演进
-- **Alias**——像 `@production`、`@staging` 这样的稳定引用
-- **Access Binding**——已批准的直连端点
-- **工具发现**——每个 Server 提供什么工具，支持按工具名搜索
-- **Trace 关联**——把 Trace 连接回处理请求的那个 MCP Server 版本
+- **有哪些 MCP Server**，什么状态（draft、active、deprecated）
+- **版本历史**——定义怎么一步步演进的
+- **Alias**——`@production`、`@staging` 这些稳定引用
+- **Access Binding**——审批过的直连端点
+- **工具发现**——每个 Server 提供什么工具，支持按名字搜
+- **Trace 关联**——把 Trace 接回处理请求的那个 MCP Server 版本
 
-Registry 是**控制面**——存储元数据和治理信息。将来会有 MCP Gateway（**数据面**）负责实际的流量路由和认证。
+Registry 管的是**控制面**——元数据和治理信息。将来还会有 MCP Gateway（**数据面**），负责实际的流量路由和认证。
 
 ::: tip 一句话总结
 - **MCP Server** = 注册的工具提供者（如"brave-search"），用反向域名格式命名

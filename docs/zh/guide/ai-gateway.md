@@ -76,7 +76,7 @@
 ---
 
 ::: details 相关寓言
-- [侦探的红线](./tracing-and-spans) — 通过网关的 LLM 调用会被 Trace 捕获
+- [侦探的红线](./tracing-and-spans) — 经过网关的 LLM 调用会记进 Trace
 - [写信人的模板](./prompts) — Prompt 通过网关端点发送
 - [发射台](./model-serving) — 网关可以代理到已部署的 MLflow 模型
 :::

@@ -43,7 +43,7 @@ Issue 可以通过 `IssueReference` 关联到具体的 Assessment，把宏观的
 :::
 
 ::: info Issue 和 Assessment 的关系
-可以理解成两个层级的质量监控。Assessment 是自下而上的：「这条 Trace 不好。」Issue 是自上而下的：「我们有一类 Trace 普遍不好，原因是这个。」两者缺一不可——Assessment 提供证据，Issue 提供可操作的洞察。
+可以理解成两层质量监控。Assessment 从下往上看：「这条 Trace 不好。」Issue 从上往下看：「有一类 Trace 普遍不好，原因在这里。」缺了哪个都不行——Assessment 攒证据，Issue 告诉你该动手修什么。
 :::
 
 ## 前端开发者参考
