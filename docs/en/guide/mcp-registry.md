@@ -22,7 +22,9 @@ When Chen traced a request that used one of Fang's tools, the trace linked back 
 
 ## The Concept
 
-**MCP (Model Context Protocol)** is an open standard that lets AI agents use external tools — search the web, query databases, call APIs, read files. An MCP server is a program that provides one or more tools that agents can call.
+Think of an AI chatbot that can't just talk — it can actually *do* things. It can search the web for you, look up your order in a database, check the weather, or read a document. Each of these abilities comes from an external **tool**. The chatbot doesn't have these abilities built in — it calls out to separate programs that provide them.
+
+**MCP (Model Context Protocol)** is an open standard that defines how AI agents discover and use these tools. An **MCP server** is a program that provides one or more tools — a "Brave Search" MCP server provides web search, a "GitHub" MCP server provides repository access, a "Postgres" MCP server provides database queries.
 
 The **MCP Registry** in MLflow is a governed, versioned catalog for these MCP server definitions. It's the system of record for:
 

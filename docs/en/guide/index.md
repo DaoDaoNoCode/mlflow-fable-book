@@ -91,6 +91,10 @@ Then branch into whichever area interests you:
 - **Want to understand quality?** → [The Test Kitchen](./datasets) → [The Judge's Tournament](./evaluation-and-scorers) → [The Quality Inspector](./issues)
 - **Want to understand infrastructure?** → [The Apartment Building](./workspaces) → [The Gatekeepers](./rbac)
 
+When you're done, read the finale — it ties every character and concept together:
+
+- [How It All Connects](./how-it-all-connects) — the grand story, architecture diagram, and full relationship map
+
 ## Quick Reference
 
 - [Glossary](/en/reference/glossary) — every term in one table

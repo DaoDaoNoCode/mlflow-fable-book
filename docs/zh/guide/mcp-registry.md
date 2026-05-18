@@ -22,7 +22,9 @@ MCP Registry 目前处于 RFC 阶段（[RFC 0004](https://github.com/mlflow/rfcs
 
 ## 概念解读
 
-**MCP（Model Context Protocol）** 是一个开放标准，让 AI Agent 可以使用外部工具——搜索网页、查数据库、调 API、读文件。一个 MCP Server 就是一个提供工具的程序。
+想象一个 AI 聊天助手，它不只是能说话——它还能真正*做事*。帮你搜网页、查数据库里的订单、看天气、读文档。这些能力不是 AI 自带的——它调用的是外部**工具**程序。
+
+**MCP（Model Context Protocol）** 是一个开放标准，定义了 AI Agent 怎么发现和使用这些工具。一个 **MCP Server** 就是提供工具的程序——「Brave Search」提供网页搜索，「GitHub」提供仓库访问，「Postgres」提供数据库查询。
 
 MLflow 的 **MCP Registry** 是一个统一管理的、带版本控制的 MCP Server 目录。它是以下这些事情的权威来源：
 

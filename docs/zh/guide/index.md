@@ -91,6 +91,10 @@ outline: deep
 - **想了解质量保障？** → [试菜间的食材单](./datasets) → [美食大赛的评委](./evaluation-and-scorers) → [质检员](./issues)
 - **想了解基础设施？** → [公寓楼的楼层](./workspaces) → [门卫和钥匙](./rbac)
 
+读完之后，看收尾篇——把所有角色和概念串成一个完整的故事：
+
+- [全景：串起来的故事](./how-it-all-connects) — 全景叙事、架构图和完整的关系表
+
 ## 速查
 
 - [术语表](/zh/reference/glossary) — 所有术语一览
