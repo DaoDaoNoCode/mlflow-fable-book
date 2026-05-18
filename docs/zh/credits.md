@@ -30,7 +30,7 @@
 
 | 工具 | 干了什么 | 链接 |
 |------|---------|------|
-| **Graphify** | 代码知识图谱工具，索引了 MLflow 仓库结构，帮助理解代码关系和架构。 | [github.com/nicobailon/graphify](https://github.com/nicobailon/graphify) |
+| **Graphify** | 代码知识图谱工具，索引了 MLflow 仓库结构，帮助理解代码关系和架构。 | [github.com/safishamsi/graphify](https://github.com/safishamsi/graphify) |
 | **Claude Code 自动记忆** | 持久化记忆系统，跨多次会话分析 MLflow 源代码，生成了 15 个结构化文档文件（数据模型、架构、API 接口等），为每个寓言的准确性提供事实基础。 | Claude Code 内置功能 |
 
 ## 用到的方法

@@ -30,7 +30,7 @@ This book wouldn't exist without these open-source projects, tools, and communit
 
 | Tool | Role | Link |
 |------|------|------|
-| **Graphify** | Codebase knowledge graph tool that indexed the MLflow repo structure, helping understand code relationships and architecture. | [github.com/nicobailon/graphify](https://github.com/nicobailon/graphify) |
+| **Graphify** | Codebase knowledge graph tool that indexed the MLflow repo structure, helping understand code relationships and architecture. | [github.com/safishamsi/graphify](https://github.com/safishamsi/graphify) |
 | **Claude Code Auto-Memory** | Persistent memory system that built 15 structured documentation files (data model, architecture, API surface, etc.) by analyzing the MLflow source code across sessions. These served as the ground truth for every fable's accuracy. | Built into Claude Code |
 
 ## The Techniques
