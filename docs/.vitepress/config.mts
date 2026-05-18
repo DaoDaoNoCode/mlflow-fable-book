@@ -7,7 +7,7 @@ export default defineConfig({
   base: process.env.VITEPRESS_BASE || '/',
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: (process.env.VITEPRESS_BASE || '/') + 'logo.svg' }],
     ['meta', { property: 'og:title', content: 'The MLflow Fable Book' }],
     ['meta', { property: 'og:description', content: '21 stories that explain every MLflow concept through everyday analogies. For developers, teams, and anyone new to the platform.' }],
     ['meta', { property: 'og:type', content: 'website' }],
