@@ -1,9 +1,21 @@
-/* ===== Hero Section Glow ===== */
+/* ===== Hero Section — Animated Gradient Name ===== */
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  --vp-home-hero-image-background-image: linear-gradient(135deg, #667eea33 0%, #764ba233 100%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #667eea44 0%, #764ba244 50%, #f093fb44 100%);
   --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
 }
 
 /* ===== Brand Colors ===== */
@@ -19,70 +31,155 @@
   --vp-c-brand-2: #9d72c8;
   --vp-c-brand-3: #a78bfa;
   --vp-c-brand-soft: rgba(139, 156, 247, 0.14);
+  --vp-home-hero-name-background: linear-gradient(135deg, #8b9cf7 0%, #a78bfa 50%, #f0abfc 100%);
 }
 
-/* ===== Smooth Page Transitions ===== */
+/* ===== Dark Mode Toggle — Circular Clip Transition ===== */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root),
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root),
+.dark::view-transition-old(root) {
+  z-index: 9999;
+}
+
+.VPSwitchAppearance {
+  width: 22px !important;
+}
+
+.VPSwitchAppearance .check {
+  transform: none !important;
+}
+
+/* ===== Smooth Page Content Fade ===== */
 .VPContent {
-  transition: opacity 0.25s ease;
+  transition: opacity 0.2s ease;
 }
 
-/* ===== Sidebar Active Item Glow ===== */
+/* ===== Sidebar Active Item — Gradient Indicator ===== */
 .VPSidebarItem.is-active > .item > .indicator {
   background: linear-gradient(180deg, #667eea, #764ba2) !important;
 }
 
-/* ===== Tip/Info/Warning Callout Polish ===== */
+/* ===== Sidebar Group Headers ===== */
+.VPSidebarItem.level-0 > .item > .text {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Callout Blocks ===== */
 .vp-doc .custom-block.tip {
   border-color: #667eea;
-  background-color: rgba(102, 126, 234, 0.06);
+  background-color: rgba(102, 126, 234, 0.05);
 }
 
 .dark .vp-doc .custom-block.tip {
-  background-color: rgba(102, 126, 234, 0.1);
+  background-color: rgba(102, 126, 234, 0.08);
 }
 
 .vp-doc .custom-block.info {
   border-color: #7cb342;
-  background-color: rgba(124, 179, 66, 0.06);
+  background-color: rgba(124, 179, 66, 0.05);
 }
 
-/* ===== Code Block Polish ===== */
+.vp-doc .custom-block.warning {
+  border-color: #ffa726;
+  background-color: rgba(255, 167, 38, 0.05);
+}
+
+/* ===== Code Blocks ===== */
 .vp-doc div[class*='language-'] {
   border-radius: 10px;
   border: 1px solid var(--vp-c-divider);
 }
 
-/* ===== Feature Cards on Home ===== */
+/* ===== Home Feature Cards — Hover Lift ===== */
 .VPFeature {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   border-radius: 12px !important;
 }
 
 .VPFeature:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.15);
+  border-color: var(--vp-c-brand-1) !important;
 }
 
-/* ===== Details/See Also Blocks ===== */
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 32px rgba(139, 156, 247, 0.12);
+}
+
+/* ===== Home Hero Action Buttons — Glow ===== */
+.VPButton.brand {
+  transition: all 0.25s ease;
+}
+
+.VPButton.brand:hover {
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  transform: translateY(-1px);
+}
+
+/* ===== See Also / Details Blocks ===== */
 .vp-doc details {
   border-radius: 8px;
   border: 1px solid var(--vp-c-divider);
   padding: 12px 16px;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .vp-doc details:hover {
   border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
 }
 
 .vp-doc details summary {
   font-weight: 600;
   cursor: pointer;
-  color: #667eea;
+  color: var(--vp-c-brand-1);
 }
 
-.dark .vp-doc details summary {
-  color: #8b9cf7;
+/* ===== Tables ===== */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc tr {
+  transition: background-color 0.15s ease;
+}
+
+.vp-doc tr:hover td {
+  background-color: rgba(102, 126, 234, 0.04);
+}
+
+.dark .vp-doc tr:hover td {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+/* ===== Headings — Subtle Gradient on H1 ===== */
+.vp-doc h1 {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Blockquote — Concept Subtitle Styling ===== */
+.vp-doc blockquote {
+  border-left-color: var(--vp-c-brand-1);
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.04), transparent);
+}
+
+.dark .vp-doc blockquote {
+  background: linear-gradient(90deg, rgba(139, 156, 247, 0.06), transparent);
 }
 
 /* ===== Scrollbar ===== */
@@ -112,20 +209,6 @@
   background: #777;
 }
 
-/* ===== Table Polish ===== */
-.vp-doc table {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.vp-doc tr:hover td {
-  background-color: rgba(102, 126, 234, 0.04);
-}
-
-.dark .vp-doc tr:hover td {
-  background-color: rgba(102, 126, 234, 0.08);
-}
-
 /* ===== Reading Progress Bar ===== */
 .reading-progress {
   position: fixed;
@@ -135,4 +218,35 @@
   background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
   z-index: 100;
   transition: width 0.1s linear;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== Link Hover — Underline Animation ===== */
+.vp-doc a {
+  text-decoration: none;
+  background-image: linear-gradient(var(--vp-c-brand-1), var(--vp-c-brand-1));
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.vp-doc a:hover {
+  background-size: 100% 2px;
+}
+
+/* ===== Nav Bar — Subtle Bottom Border ===== */
+.VPNav {
+  border-bottom: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px);
+}
+
+.dark .VPNav {
+  background: rgba(26, 26, 46, 0.85) !important;
+}
+
+/* ===== Content Width — Slightly Wider for Readability ===== */
+.vp-doc.container {
+  max-width: 800px;
 }
